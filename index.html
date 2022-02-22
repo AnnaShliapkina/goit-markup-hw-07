@@ -18,25 +18,26 @@
 <body>
   <header>
     <div class="container nav">
-      <nav class="main-nav">
-        <a class="logo" href="/">Web<span class="logo-dark">Studio</span></a>
-        <ul class="nav-list-header">
-          <li class="nav-item-header"><a href="./index.html" class="link "><span class="link-current">Студия</span></a>
+      <nav class="navigation">
+        <a class="logo" href="/">Web<span class="logo--dark">Studio</span></a>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="./index.html" class="navigation__link "><span
+                class="navigation__link--current">Студия</span></a>
           </li>
-          <li class="nav-item-header"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="nav-item-header"><a href="" class="link">Контакты</a></li>
+          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="auto-nav">
-        <li class="nav-item-header">
-          <a href="mailto:info@devstudio.com" class="auto-link">
-            <svg class="icon-header" width="16" height="12">
+        <li class="navigation__item">
+          <a href="mailto:info@devstudio.com" class="auto-nav__link">
+            <svg class="auto-nav__item" width="16" height="12">
               <use href="images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="nav-item-header">
-          <a href="tel:+380961111111" class="auto-link">
-            <svg class="icon-header" width="10" height="16">
+        <li class="navigation__item">
+          <a href="tel:+380961111111" class="auto-nav__link">
+            <svg class="auto-nav__item" width="10" height="16">
               <use href="images/symbol-defs.svg#icon-smartphone"></use>
             </svg>+380961111111 </a>
         </li>
@@ -47,53 +48,53 @@
   <main>
     <section class="bar overlay">
       <div class="container">
-        <h1 class="title-bar">
+        <h1 class="bar--title">
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button data-modal-open type="button" class="button-bar">Заказать услугу</button>
+        <button data-modal-open type="button" class="bar--button">Заказать услугу</button>
       </div>
 
 
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
-          <button data-modal-close type="button" class="icon-btn">
-            <svg class="icon-vector" width="11" height="11">
+          <button data-modal-close type="button" class="modal--button">
+            <svg class="modal--vector" width="11" height="11">
               <use href="./images/symbol-defs.svg#icon-Vector"></use>
             </svg>
           </button>
 
           <form class="form" role="group">
-            <p class="form-text">Оставьте свои данные, мы перезвоним</p>
-            <ul class="form-list">
+            <p class="form--text">Оставьте свои данные, мы перезвоним</p>
+            <ul class="form--list">
 
-              <li class="form-item">
-                <label class="form-label">Имя
-                  <span class="form-box">
-                    <input class="form-input" type="text" name="name">
-                    <svg class="form-icon" width="12" height="12">
+              <li class="form--item">
+                <label class="form--label">Имя
+                  <span class="form--box">
+                    <input class="form--input" type="text" name="name">
+                    <svg class="form--icon" width="12" height="12">
                       <use href="./images/icons.svg#icon-name-form"></use>
                     </svg>
                   </span>
                 </label>
               </li>
 
-              <li class="form-item">
-                <label class="form-label">Телефон
-                  <span class="form-box">
-                    <input class="form-input" type="text" name="tel">
-                    <svg class="form-icon" width="12" height="12">
+              <li class="form--item">
+                <label class="form--label">Телефон
+                  <span class="form--box">
+                    <input class="form--input" type="text" name="tel">
+                    <svg class="form--icon" width="12" height="12">
                       <use href="./images/icons.svg#icon-phone-form"></use>
                     </svg>
                   </span>
                 </label>
               </li>
 
-              <li class="form-item">
-                <label class="form-label">Почта
-                  <span class="form-box">
-                    <input class="form-input" type="text" name="mail">
-                    <svg class="form-icon" width="12" height="12">
+              <li class="form--item">
+                <label class="form--label">Почта
+                  <span class="form--box">
+                    <input class="form--input" type="text" name="mail">
+                    <svg class="form--icon" width="12" height="12">
                       <use href="./images/icons.svg#icon-mail-form"></use>
                     </svg>
                   </span>
@@ -101,9 +102,9 @@
               </li>
             </ul>
 
-            <div class="form-comment">
-              <label class="form-label" for="comment">Комментарий</label>
-              <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            <div class="form--comment">
+              <label class="form--label" for="comment">Комментарий</label>
+              <textarea class="form--textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
             </div>
 
             <div class="checkbox">
@@ -415,7 +416,7 @@
       <div class="baseline">
         <div class="container-footer">
           <div>
-            <a class="logo" href="/">Web<span class="logo-light">Studio</span></a>
+            <a class="logo" href="/">Web<span class="logo--light">Studio</span></a>
             <address>
               <ul class="footer-list">
                 <li class="footer-item">
