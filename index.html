@@ -16,13 +16,13 @@
 </head>
 
 <body>
-  <header>
-    <div class="container nav">
+  <header class="header">
+    <div class="container container__header">
       <nav class="navigation">
-        <a class="logo" href="/">Web<span class="logo--dark">Studio</span></a>
+        <a class="logo" href="/">Web<span class="logo__dark">Studio</span></a>
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="./index.html" class="navigation__link "><span
-                class="navigation__link--current">Студия</span></a>
+          <li class="navigation__item"><a href="./index.html"
+              class="navigation__link navigation__link--current">Студия</a>
           </li>
           <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
           <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
@@ -31,13 +31,13 @@
       <ul class="auto-nav">
         <li class="navigation__item">
           <a href="mailto:info@devstudio.com" class="auto-nav__link">
-            <svg class="auto-nav__item" width="16" height="12">
+            <svg class="auto-nav__icon" width="16" height="12">
               <use href="images/symbol-defs.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li class="navigation__item">
           <a href="tel:+380961111111" class="auto-nav__link">
-            <svg class="auto-nav__item" width="10" height="16">
+            <svg class="auto-nav__icon" width="10" height="16">
               <use href="images/symbol-defs.svg#icon-smartphone"></use>
             </svg>+380961111111 </a>
         </li>
@@ -48,7 +48,7 @@
   <main>
     <section class="bar overlay">
       <div class="container">
-        <h1 class="bar--title">
+        <h1 class="bar__title">
           эффективные решения <br />
           для вашего бизнеса
         </h1>
@@ -132,52 +132,53 @@
 
     </section>
 
-    <section class="opportunity section">
+    <section class=" section">
       <!-- Сделать невидимым h2 -->
       <div class="container">
-        <h2 class="opportunity__title--hidden">Заголовок 2</h2>
+        <h2 class="hidden">Заголовок 2</h2>
         <ul class="opportunities">
-          <li class="opportunities__list">
+          <li class="opportunities__item">
             <div class="opportunities__container">
-              <svg class="icon-oppo" width="70" height="70">
+              <svg class="opportunities__icon" width="70" height="70">
+                <!-- chenged oppo-icon on opportunities-icon -->
                 <use href="images/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
             <h3 class="opportunities__title">внимание к деталям</h3>
-            <p class="opportunities__meaning">
+            <p class="opportunities__text">
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
-          <li class="opportunities__list">
+          <li class="opportunities__item">
             <div class="opportunities__container">
-              <svg class="icon-oppo" width="70" height="70">
+              <svg class="opportunities__icon" width="70" height="70">
                 <use href="images/symbol-defs.svg#icon-clock"></use>
               </svg>
             </div>
             <h3 class="opportunities__title">пунктуальность</h3>
-            <p class="opportunities__meaning">
+            <p class="opportunities__text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="opportunities__list">
+          <li class="opportunities__item">
             <div class="opportunities__container">
-              <svg class="icon-oppo" width="70" height="70">
+              <svg class="opportunities__icon" width="70" height="70">
                 <use href="images/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </div>
             <h3 class="opportunities__title">планирование</h3>
-            <p class="opportunities__meaning">
+            <p class="opportunities__text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="opportunities__list">
+          <li class="opportunities__item">
             <div class="opportunities__container">
-              <svg class="icon-oppo" width="70" height="70">
+              <svg class="opportunities__icon" width="70" height="70">
                 <use href="images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </div>
             <h3 class="opportunities__title">современные технологии</h3>
-            <p class="opportunities__meaning">
+            <p class="opportunities__text">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
@@ -185,26 +186,26 @@
       </div>
     </section>
 
-    <section class="work-section section--top">
+    <section class="section section--no-padding--top">
       <div class="container">
-        <h2 class="about-name">Чем мы занимаемся</h2>
+        <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="works">
           <li class="works__item">
             <img src="images/box1.jpg" alt="работа с алгоритмами и структурой  данных" width="370" />
-            <div class="text__box">
-              <p class="works__definition">десктопные приложения</p>
+            <div class="works__box">
+              <p class="works__description">десктопные приложения</p>
             </div>
           </li>
           <li class="works__item">
             <img class="picture" src="images/box2.jpg" alt="разработка мобильных приложений" width="370" />
-            <div class="text__box">
-              <p class="works__definition">мобильные приложения</p>
+            <div class="works__box">
+              <p class="works__description">мобильные приложения</p>
             </div>
           </li>
           <li class="works__item">
             <img class="picture" src="images/box3.jpg" alt="веб-дизайн" width="370" />
-            <div class="text__box">
-              <p class="works__definition">дизайнерские решения</p>
+            <div class="works__box">
+              <p class="works__description">дизайнерские решения</p>
             </div>
 
           </li>
@@ -214,39 +215,39 @@
 
     <section class="section  section--grey-color">
       <div class="container">
-        <h2 class="about-name">Наша команда</h2>
+        <h2 class="section__title">Наша команда</h2>
         <ul class="community">
           <li class="community__item">
             <img src="images/img.jpg" alt="фото Игоря Демьяненко" width="270" />
             <div class="community__container">
               <h3 class="community__title">Игорь Демьяненко</h3>
-              <p lang="en" class="community__position">Product Desiner</p>
+              <p lang="en" class="community__text">Product Desiner</p>
               <div>
                 <ul class="social">
                   <li class="social__item">
                     <a class="social__link " href="https://www.instagram.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" https="//www.twitter.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="//www.facebook.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="https://www.linkedin.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -259,33 +260,33 @@
             <img src="images/img(1).jpg" alt="фото Ольги Репиной" width="270" />
             <div class="community__container">
               <h3 class="community__title">Ольга Репина</h3>
-              <p lang="en" class="community__position">Frontend Developer</p>
+              <p lang="en" class="community__text">Frontend Developer</p>
               <div>
                 <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="https://www.instagram.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" https="//www.twitter.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="//www.facebook.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="https://www.linkedin.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -298,33 +299,33 @@
             <img src="images/img(2).jpg" alt="фото Николая Тарасова" width="270" />
             <div class="community__container">
               <h3 class="community__title">Николай Тарасов</h3>
-              <p lang="en" class="community__position">Marketing</p>
+              <p lang="en" class="community__text">Marketing</p>
               <div>
                 <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="https://www.instagram.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" https="//www.twitter.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="//www.facebook.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="https://www.linkedin.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -337,33 +338,33 @@
             <img src="images/img(3).jpg" alt="фото Михаила Ермакова" width="270" />
             <div class="community__container">
               <h3 class="community__title">Михаил Ермаков</h3>
-              <p lang="en" class="community__position">UI Designer</p>
+              <p lang="en" class="community__text">UI Designer</p>
               <div>
                 <ul class="social">
                   <li class="social__item">
                     <a class="social__link" href="https://www.instagram.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="" https="//www.twitter.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="//www.facebook.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
                     <a class="social__link" href="https://www.linkedin.com/">
-                      <svg class="social__icon--community" width="20" height="20">
+                      <svg class="social__icon" width="20" height="20">
                         <use href="images/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -376,10 +377,10 @@
       </div>
     </section>
 
-    <section class="section__clients">
+    <section class="section">
       <div class="container">
-        <h2 class="about-name">Постоянные клиенты</h2>
-        <ul class="clients__items">
+        <h2 class="section__title">Постоянные клиенты</h2>
+        <ul class="clients">
           <li class="clients__item">
             <a class="clients__link" href="">
               <svg class="clients__icon" width="106" height="60">
@@ -417,7 +418,7 @@
       <div class="baseline">
         <div class="container--footer">
           <div>
-            <a class="logo" href="/">Web<span class="logo--light">Studio</span></a>
+            <a class="logo" href="/">Web<span class="logo__light">Studio</span></a>
             <address>
               <ul class="footer__list">
                 <li class="footer__item">

@@ -1,9 +1,9 @@
-.work-section {
+.section--no-padding--top {
   margin-bottom: 93px;
   margin-top: 0;
 }
 
-.about-name {
+.section__title {
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
@@ -30,7 +30,7 @@
   }
 }
 
-.text__box {
+.works__box {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -45,7 +45,7 @@
   background-color: $bgc-textbox;
 }
 
-.works__definition {
+.works__description {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);

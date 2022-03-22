@@ -1,8 +1,8 @@
-.section__clients {
+.section {
   @extend %section;
 }
 
-.clients__items {
+.clients {
   display: flex;
   /* justify-content: center; */
 }

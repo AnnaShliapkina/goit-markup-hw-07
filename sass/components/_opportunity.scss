@@ -3,11 +3,11 @@
   @extend %section;
 }
 
-.opportunity__title--hidden {
+.hidden {
   @extend %visually-hidden;
 }
 
-.opportunities__list {
+.opportunities__item {
   margin-right: 30px;
 
   &:last-child {
@@ -36,7 +36,7 @@
   text-transform: uppercase;
 }
 
-.opportunities__meaning {
+.opportunities__text {
   color: $primary-text-color;
   font-weight: 400;
   font-size: 14px;
